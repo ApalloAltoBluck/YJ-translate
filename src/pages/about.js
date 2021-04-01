@@ -7,7 +7,7 @@ import tomasOliver from "../gif/tomas-oliver.gif"
 import oliverTomas from "../gif/oliver-tomas.gif"
 
 function AboutPage(props) {
-
+  var oliverOrTomas = false;
   return (<Row className="sidebar">
 
   <Header></Header>
@@ -23,24 +23,32 @@ function AboutPage(props) {
         <div class="my-auto">
         <a href="https://blucksy.com/" className="about-link">
             <h1 id="oliver-tag" class="my-auto text-center  p-2 mx-auto" onMouseEnter={e => {
-              document.getElementById("face-back").src=tomasOliver; document.body.style.backgroundColor = '#FE5D26';
-              document.body.style.color = '#fff';
-              document.getElementById("tomas-tag").style.color = '#fff';
-              document.getElementById("tomas-tag").style.backgroundColor = '';
-              document.getElementById("oliver-tag").style.color = '#FE5D26';
-              document.getElementById("oliver-tag").style.backgroundColor = '#fff';}}>
+              if (!oliverOrTomas) { 
+                document.getElementById("face-back").src=tomasOliver; document.body.style.backgroundColor = '#FE5D26';
+                document.body.style.color = '#fff';
+                document.getElementById("tomas-tag").style.color = '#fff';
+                document.getElementById("tomas-tag").style.backgroundColor = '';
+                document.getElementById("oliver-tag").style.color = '#FE5D26';
+                document.getElementById("oliver-tag").style.backgroundColor = '#fff';
+                oliverOrTomas = true;
+              }
+            }}>
               Oliver Buckley
             </h1>
           </a>
           <img id="face-back" class="my-auto mx-auto p-2" src={tomas}></img>
           <a href="https://tomascarlson.com/" className="about-link">
             <h1 id="tomas-tag" class="my-auto text-center p-2 mx-auto" onMouseEnter={e => {
-            document.getElementById("face-back").src=oliverTomas; document.body.style.backgroundColor = '#DE4040';
-            document.body.style.color = '#fff';
-            document.getElementById("oliver-tag").style.color = '#fff';
-            document.getElementById("oliver-tag").style.backgroundColor = '';
-            document.getElementById("tomas-tag").style.color = '#DE4040';
-            document.getElementById("tomas-tag").style.backgroundColor = '#fff';}}>
+              if (oliverOrTomas) { 
+                document.getElementById("face-back").src=oliverTomas; document.body.style.backgroundColor = '#DE4040';
+                document.body.style.color = '#fff';
+                document.getElementById("oliver-tag").style.color = '#fff';
+                document.getElementById("oliver-tag").style.backgroundColor = '';
+                document.getElementById("tomas-tag").style.color = '#DE4040';
+                document.getElementById("tomas-tag").style.backgroundColor = '#fff';
+                oliverOrTomas = false;
+              }
+            }}>
               Tomás Carlson
           </h1>
           </a>
