@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import Container from 'react-bootstrap/Container';
 
 import {Button, Alert, Col, Row} from 'react-bootstrap/';
-import Sidebar from "../components/sidebar.js"
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -167,7 +166,6 @@ const IndexPage = () => {
     </Col>
     <Col dismissible variant="danger">
     <Alert.Heading>the fungus is among us</Alert.Heading>
-    <Sidebar />
     <p>
     </p>
   </Col>
