@@ -5,9 +5,11 @@ import tomas from "../images/tomas.jpg"
 import oliver from "../images/oliver.jpg"
 import tomasOliver from "../gif/tomas-oliver.gif"
 import oliverTomas from "../gif/oliver-tomas.gif"
+import frontBack from "../gif/backandforth.gif"
+
 
 function AboutPage(props) {
-  var oliverOrTomas = false;
+  var oliverOrTomas = null;
   return (<Row className="sidebar">
 
   <Header></Header>
@@ -21,9 +23,9 @@ function AboutPage(props) {
       </div>
       <div class="col-sm text-justify d-flex flex-column" style={{  height: '100vh'}}>
         <div class="my-auto">
-        <a href="https://blucksy.com/" className="about-link">
-            <h1 id="oliver-tag" class="my-auto text-center  p-2 mx-auto" onMouseEnter={e => {
-              if (!oliverOrTomas) { 
+          <a href="https://blucksy.com/" className="about-link">
+            <h1 id="oliver-tag" class="my-auto text-center p-2 mx-auto" onMouseEnter={e => {
+              if (!oliverOrTomas || oliverOrTomas == null) { 
                 document.getElementById("face-back").src=tomasOliver; document.body.style.backgroundColor = '#FE5D26';
                 document.body.style.color = '#fff';
                 document.getElementById("tomas-tag").style.color = '#fff';
@@ -31,15 +33,16 @@ function AboutPage(props) {
                 document.getElementById("oliver-tag").style.color = '#FE5D26';
                 document.getElementById("oliver-tag").style.backgroundColor = '#fff';
                 oliverOrTomas = true;
+                setTimeout(() => { document.getElementById("face-back").src=oliver; }, 960);
               }
             }}>
               Oliver Buckley
             </h1>
           </a>
-          <img id="face-back" class="my-auto mx-auto p-2" src={tomas}></img>
+          <img id="face-back" class="my-auto mx-auto p-2" src={frontBack}></img>
           <a href="https://tomascarlson.com/" className="about-link">
             <h1 id="tomas-tag" class="my-auto text-center p-2 mx-auto" onMouseEnter={e => {
-              if (oliverOrTomas) { 
+              if (oliverOrTomas || oliverOrTomas == null) { 
                 document.getElementById("face-back").src=oliverTomas; document.body.style.backgroundColor = '#DE4040';
                 document.body.style.color = '#fff';
                 document.getElementById("oliver-tag").style.color = '#fff';
@@ -47,6 +50,7 @@ function AboutPage(props) {
                 document.getElementById("tomas-tag").style.color = '#DE4040';
                 document.getElementById("tomas-tag").style.backgroundColor = '#fff';
                 oliverOrTomas = false;
+                setTimeout(() => { document.getElementById("face-back").src=tomas; }, 960);
               }
             }}>
               Tomás Carlson
