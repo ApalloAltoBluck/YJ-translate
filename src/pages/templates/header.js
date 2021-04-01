@@ -7,7 +7,6 @@ function header(props) {
   return (
     <>
    {/* ROW ONE */}
-  <Row className="sidebar">
 
 
     <Col md={3}dismissible variant="danger" className="sidebar-content w-10">
@@ -19,7 +18,7 @@ function header(props) {
       
       <h1><a href="/" className="text-white"><div className="slatt">CLIENTS</div></a></h1>
       <h1 className="text-white"><a href="/" className="text-white"><div className="slatt">PORTFOLIO</div></a></h1>
-      <h1 className="text-white"><a href="/" className="text-white"><div className="slatt">ABOUT</div></a></h1>
+      <h1 className="text-white"><a href="/about" className="text-white"><div className="slatt">ABOUT</div></a></h1>
       <h1 className="text-white"><a href="/" className="text-white"><div className="slatt">ADRENOCHROME      </div></a></h1>
       <h1 className="text-white"><div className="slatt">CONTACT</div></h1>
 
@@ -35,14 +34,7 @@ function header(props) {
       </Container>
 
     </Col>
-    {/* <Col dismissible variant="danger">
-    <Alert.Heading>the fungus is among us</Alert.Heading>
-    <p>
-        
-    </p>
-  </Col> */}
 
-</Row>
 </>
   )
 }
