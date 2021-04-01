@@ -1,7 +1,6 @@
-@font-face {
-    font-family: "Niveau Grotesk";
-    src: url("https://use.typekit.net/ixa6xeg.css") format("woff2"),
-  }
+@import url("https://use.typekit.net/ixa6xeg.css");
+
+
 div {
     overflow:hidden;
 }
@@ -10,7 +9,13 @@ div {
 }
 
 h1 {
-    font-family:"Niveau Grotesk";
+    font-family: niveau-grotesk, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
 }
 
 .sidebar-content {

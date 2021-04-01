@@ -143,8 +143,7 @@ const IndexPage = () => {
     
 <Col dismissible variant="danger">
     <Alert.Heading>the fungus is among us</Alert.Heading>
-    <p>
-    </p>
+ 
   </Col>
 
 </Row>

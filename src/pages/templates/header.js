@@ -22,13 +22,13 @@ function header(props) {
       <h1 className="text-white"><a href="/" className="text-white"><div className="slatt">ADRENOCHROME      </div></a></h1>
       <h1 className="text-white"><div className="slatt">CONTACT</div></h1>
 
-      <p>
+      
 
       <div className="fixed-bottom">
       <h1 className="text-white">CONTACT</h1>;
       </div>
 
-      </p>
+
 
      
       </Container>
