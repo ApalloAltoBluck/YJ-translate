@@ -140,25 +140,30 @@ const IndexPage = () => {
   return (<>
    {/* ROW ONE */}
   <Row className="sidebar">
-    <Col dismissible variant="danger" className="sidebar-content">
-      <Alert.Heading>the fungus is among us</Alert.Heading>
-      <h1 className="text-white"> HUGH FUNGUS</h1>
+
+
+    <Col md={3}dismissible variant="danger" className="sidebar-content w-10">
+
+      <Container>
+        <br></br>
+      <h1 className=" logo">OLTO CONCEPTS</h1>
+      <br></br>
+
+      <h1><a href="/" className="text-white">CLIENTS</a></h1>
+      <h1 className="text-white">PORTFOLIO</h1>
+      <h1 className="text-white">ABOUT</h1>
+      <h1 className="text-white">CARTS 😈</h1>
+      <h1 className="text-white">CONTACT</h1>
       <p>
-        tthe question is do u have compassion???!?!
       </p>
+      </Container>
+
     </Col>
     <Col dismissible variant="danger">
     <Alert.Heading>the fungus is among us</Alert.Heading>
     <p>
-      tthe question is do u have compassion???!?!
     </p>
   </Col>
-  <Col dismissible variant="danger">
-  <Alert.Heading>the fungus is among us</Alert.Heading>
-  <p>
-    tthe question is do u have compassion???!?!
-  </p>
-</Col>
 </Row>
 </>
   )
