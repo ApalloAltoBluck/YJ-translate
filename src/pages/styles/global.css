@@ -8,6 +8,11 @@ div {
     height:100vh !important;
 }
 
+.logo-redirect {
+    text-decoration:none !important;
+    color:black;
+}
+
 h1 {
     font-family: niveau-grotesk, sans-serif;
 
@@ -16,6 +21,10 @@ font-weight: 700;
 font-style: normal;
 
 
+}
+
+.Col {
+    background-color:white;
 }
 
 .sidebar-content {
@@ -35,6 +44,7 @@ font-style: normal;
     margin:3%;
     margin-left:auto;
     margin-right:auto;
+
     box-shadow: 3px;
 }
 .slatt:hover  {background-color:white !important;
@@ -53,4 +63,9 @@ color:black;}
 }
 
 
-
+.icon-logo {
+    margin-left:1%;
+    margin-top:1%;
+    margin-right:1%;
+    margin-bottom:1%;
+}

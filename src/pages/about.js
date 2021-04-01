@@ -8,20 +8,22 @@ import oliverTomas from "../gif/oliver-tomas.gif"
 
 function AboutPage(props) {
 
-  return (<Row className="sidebar">
+  return (<><Col className="sidebar"><Header></Header></Col>
+  
 
-  <Header></Header>
   
   <Col dismissible variant="danger">
   <div className="container">
   <img id="face-back" src={tomas}></img>
 
     <div class="row">
-      <div onMouseEnter={() => document.getElementById("face-back").src=tomasOliver} 
+      <div onClick={() => window.location.href="https://blucksy.com"} onMouseEnter={() => document.getElementById("face-back").src=tomasOliver} 
       onMouseLeave={() => document.getElementById("face-back").src=oliver} class="col-sm text-justify d-flex flex-column mx-n5" style={{  height: '100vh'}}>
-        <h1 class="text-center mt-auto text-white p-2 mx-auto" style={{ top: 0, bottom: 0, position: 'relative', backgroundColor: '#000' }}>
+        <a class="text-center mt-auto text-white p-2 mx-auto"  style={{ top: 0, bottom: 0, position: 'relative', backgroundColor: '#000' }}>
+        <h1  >
           Oliver Buckley
         </h1>
+        </a>
         <br></br>
       </div>
       <div onMouseEnter={() => document.getElementById("face-back").src=oliverTomas}
@@ -34,8 +36,7 @@ function AboutPage(props) {
     </div>
   </div>
   </Col>
-
-  </Row>)
+</>)
 }
 
 
