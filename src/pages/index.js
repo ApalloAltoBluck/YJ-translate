@@ -141,9 +141,8 @@ const IndexPage = () => {
 
       <Header></Header>
     
-<Col dismissible variant="danger">
+  <Col dismissible variant="danger">
     <Alert.Heading>the fungus is among us</Alert.Heading>
- 
   </Col>
 
 </Row>
