@@ -23,7 +23,7 @@ function AboutPage(props) {
       </div>
       <div class="col-sm text-justify d-flex flex-column" style={{  height: '100vh'}}>
         <div class="my-auto">
-          <a href="https://blucksy.com/" className="about-link">
+          <a href="https://blucksy.com/" target="_blank" rel="noopener noreferrer"  className="about-link">
             <h1 id="oliver-tag" class="my-auto text-center p-2 mx-auto" onMouseEnter={e => {
               if (!oliverOrTomas || oliverOrTomas == null) { 
                 document.getElementById("face-over").src=tomasOliver;
@@ -45,7 +45,7 @@ function AboutPage(props) {
             <img id="face-under" class="my-auto mx-auto p-2" src={frontBack}></img>
             <img id="face-over" class="my-auto mx-auto p-2" src={frontBack}></img>
           </div>
-          <a href="https://tomascarlson.com/" className="about-link">
+          <a href="https://tomascarlson.com/" target="_blank" rel="noopener noreferrer"  className="about-link">
             <h1 id="tomas-tag" class="my-auto text-center p-2 mx-auto" onMouseEnter={e => {
               if (oliverOrTomas || oliverOrTomas == null) { 
                 document.getElementById("face-over").src=oliverTomas;
