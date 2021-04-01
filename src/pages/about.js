@@ -14,22 +14,33 @@ function AboutPage(props) {
   
   <Col dismissible variant="danger">
   <div className="container">
-  <img id="face-back" src={tomas}></img>
-
     <div class="row">
-      <div onMouseEnter={() => document.getElementById("face-back").src=tomasOliver} 
-      onMouseLeave={() => document.getElementById("face-back").src=oliver} class="col-sm text-justify d-flex flex-column mx-n5" style={{  height: '100vh'}}>
-        <h1 class="text-center mt-auto text-white p-2 mx-auto" style={{ top: 0, bottom: 0, position: 'relative', backgroundColor: '#000' }}>
-          Oliver Buckley
-        </h1>
+      <div class="col-sm text-justify d-flex flex-column" style={{  height: '100vh'}}>
+        <p class="mx-auto my-auto">Presented in this audiovisual medium is a card representing nineteen U.S. dollars’ worth of virtual currency usable only in the popular video game of the Battle Royale genre created and developed by Epic Games, Fortnite. My inquiry is this: whom among you would find it desirable to acquire such an item as this? I assure you, also, that I intend to depart with the article in question. You must remember to distribute this video elsewhere! Lastly, to those jesters among us who intend to stir strife in these comments for purposes of personal humor and satisfaction, be precarious as to prevent yourself from being banished and forbidden from participating therein.</p>
         <br></br>
       </div>
-      <div onMouseEnter={() => document.getElementById("face-back").src=oliverTomas}
-      onMouseLeave={() => document.getElementById("face-back").src=tomas}  class="col-sm text-justify d-flex flex-column mx-n5" style={{  height: '100vh'}}>
-        <h1 class="text-center mt-auto text-white p-2 mx-auto" style={{ top: 0, bottom: 0, position: 'relative', backgroundColor: '#000' }}>
-          Tomás Carlson
-        </h1>
-        <br></br>
+      <div class="col-sm text-justify d-flex flex-column" style={{  height: '100vh'}}>
+        <div class="my-auto">
+          <h1 id="oliver-tag" class="my-auto text-center  p-2 mx-auto" onMouseEnter={e => {
+            document.getElementById("face-back").src=tomasOliver; document.body.style.backgroundColor = '#FE5D26';
+            document.body.style.color = '#fff';
+            document.getElementById("tomas-tag").style.color = '#fff';
+            document.getElementById("tomas-tag").style.backgroundColor = '';
+            document.getElementById("oliver-tag").style.color = '#FE5D26';
+            document.getElementById("oliver-tag").style.backgroundColor = '#fff';}}>
+            Oliver Buckley
+          </h1>
+          <img id="face-back" class="my-auto mx-auto p-2" src={tomas}></img>
+          <h1 id="tomas-tag" class="my-auto text-center p-2 mx-auto" onMouseEnter={e => {
+            document.getElementById("face-back").src=oliverTomas; document.body.style.backgroundColor = '#DE4040';
+            document.body.style.color = '#fff';
+            document.getElementById("oliver-tag").style.color = '#fff';
+            document.getElementById("oliver-tag").style.backgroundColor = '';
+            document.getElementById("tomas-tag").style.color = '#DE4040';
+            document.getElementById("tomas-tag").style.backgroundColor = '#fff';}}>
+            Tomás Carlson
+          </h1>
+        </div>
       </div>
     </div>
   </div>
