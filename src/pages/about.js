@@ -26,31 +26,38 @@ function AboutPage(props) {
           <a href="https://blucksy.com/" className="about-link">
             <h1 id="oliver-tag" class="my-auto text-center p-2 mx-auto" onMouseEnter={e => {
               if (!oliverOrTomas || oliverOrTomas == null) { 
-                document.getElementById("face-back").src=tomasOliver; document.body.style.backgroundColor = '#FE5D26';
+                document.getElementById("face-over").src=tomasOliver;
+                document.getElementById("face-under").src=oliver;
+                document.body.style.backgroundColor = '#FE5D26';
                 document.body.style.color = '#fff';
                 document.getElementById("tomas-tag").style.color = '#fff';
                 document.getElementById("tomas-tag").style.backgroundColor = '';
                 document.getElementById("oliver-tag").style.color = '#FE5D26';
                 document.getElementById("oliver-tag").style.backgroundColor = '#fff';
                 oliverOrTomas = true;
-                setTimeout(() => { document.getElementById("face-back").src=oliver; }, 960);
+                setTimeout(() => { document.getElementById("face-over").src=""; }, 960);
               }
             }}>
               Oliver Buckley
             </h1>
           </a>
-          <img id="face-back" class="my-auto mx-auto p-2" src={frontBack}></img>
+          <div class="face-imgs ml-a">
+            <img id="face-under" class="my-auto mx-auto p-2" src={frontBack}></img>
+            <img id="face-over" class="my-auto mx-auto p-2" src={frontBack}></img>
+          </div>
           <a href="https://tomascarlson.com/" className="about-link">
             <h1 id="tomas-tag" class="my-auto text-center p-2 mx-auto" onMouseEnter={e => {
               if (oliverOrTomas || oliverOrTomas == null) { 
-                document.getElementById("face-back").src=oliverTomas; document.body.style.backgroundColor = '#DE4040';
+                document.getElementById("face-over").src=oliverTomas;
+                document.getElementById("face-under").src=tomas;
+                document.body.style.backgroundColor = '#DE4040';
                 document.body.style.color = '#fff';
                 document.getElementById("oliver-tag").style.color = '#fff';
                 document.getElementById("oliver-tag").style.backgroundColor = '';
                 document.getElementById("tomas-tag").style.color = '#DE4040';
                 document.getElementById("tomas-tag").style.backgroundColor = '#fff';
                 oliverOrTomas = false;
-                setTimeout(() => { document.getElementById("face-back").src=tomas; }, 960);
+                setTimeout(() => { document.getElementById("face-over").src=""; }, 960);
               }
             }}>
               Tomás Carlson

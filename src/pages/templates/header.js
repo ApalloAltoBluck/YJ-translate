@@ -19,13 +19,12 @@ function header(props) {
       <h1><a href="/clients" className="text-white"><div className="slatt">CLIENTS</div></a></h1>
       <h1 className="text-white"><a href="/" className="text-white"><div className="slatt">PORTFOLIO</div></a></h1>
       <h1 className="text-white"><a href="/about" className="text-white"><div className="slatt">ABOUT</div></a></h1>
-      <h1 className="text-white"><a href="/" className="text-white"><div className="slatt">ADRENOCHROME      </div></a></h1>
       <h1 className="text-white"><div className="slatt">CONTACT</div></h1>
 
       
 
       <div className="fixed-bottom">
-      <h1 className="text-white">CONTACT</h1>;
+      <p className="text-white">© OLTO Concepts, 2021</p>
       </div>
 
 

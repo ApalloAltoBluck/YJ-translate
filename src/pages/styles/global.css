@@ -46,11 +46,19 @@ h1 {
 .slatt:hover  {background-color:white !important;
 color:black;}
 
-#face-back {
-    display: block;
-    height: 60vh; 
-    width: auto !important;
+.face-imgs {
+    height: 60vh !important; 
+    width: 60vh !important; 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+.face-imgs img {
+    position: absolute;
+    width: 100%;
+}
+
 
 body {
     transition: 1s;
