@@ -15,6 +15,12 @@ h1 {
 
 .sidebar-content {
     background-color:black;
+    padding-left:2% !important;
+}
+
+.fixed-bottom {
+    padding-left:2% !important;
+
 }
 
 
@@ -24,4 +30,11 @@ h1 {
     margin:3%;
     margin-left:auto;
     margin-right:auto;
+    box-shadow: 3px;
 }
+.slatt:hover  {background-color:white !important;
+color:black;}
+
+
+
+

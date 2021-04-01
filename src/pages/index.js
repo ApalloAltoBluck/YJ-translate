@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Container from 'react-bootstrap/Container';
 
 import {Button, Alert, Col, Row} from 'react-bootstrap/';
+import Sidebar from "../components/sidebar.js"
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -132,9 +133,6 @@ const links = [
   },
 ]
 
-const test = () => {
-  return <Container><h1>blah</h1></Container>;
-}
 // markup
 const IndexPage = () => {
   return (<>
@@ -148,22 +146,32 @@ const IndexPage = () => {
         <br></br>
       <h1 className=" logo">OLTO CONCEPTS</h1>
       <br></br>
+      
+      <h1><a href="/" className="text-white"><div className="slatt">CLIENTS</div></a></h1>
+      <h1 className="text-white"><a href="/" className="text-white"><div className="slatt">PORTFOLIO</div></a></h1>
+      <h1 className="text-white"><a href="/" className="text-white"><div className="slatt">ABOUT</div></a></h1>
+      <h1 className="text-white"><a href="/" className="text-white"><div className="slatt">ADRENOCHROME      </div></a></h1>
+      <h1 className="text-white"><div className="slatt">CONTACT</div></h1>
 
-      <h1><a href="/" className="text-white">CLIENTS</a></h1>
-      <h1 className="text-white">PORTFOLIO</h1>
-      <h1 className="text-white">ABOUT</h1>
-      <h1 className="text-white">CARTS 😈</h1>
-      <h1 className="text-white">CONTACT</h1>
       <p>
+
+      <div className="fixed-bottom">
+      <h1 className="text-white">CONTACT</h1>;
+      </div>
+
       </p>
+
+     
       </Container>
 
     </Col>
     <Col dismissible variant="danger">
     <Alert.Heading>the fungus is among us</Alert.Heading>
+    <Sidebar />
     <p>
     </p>
   </Col>
+
 </Row>
 </>
   )
