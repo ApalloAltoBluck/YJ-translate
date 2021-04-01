@@ -23,16 +23,16 @@ function AboutPage(props) {
       </div>
       <div class="col-sm text-justify d-flex flex-column" style={{  height: '100vh'}}>
         <div class="my-auto">
-          <a href="https://blucksy.com/" target="_blank" rel="noopener noreferrer"  className="about-link">
+          <a href="https://blucksy.com/" target="_blank" rel="noopener noreferrer" className="about-link">
             <h1 id="oliver-tag" class="my-auto text-center p-2 mx-auto" onMouseEnter={e => {
               if (!oliverOrTomas || oliverOrTomas == null) { 
                 document.getElementById("face-over").src=tomasOliver;
                 document.getElementById("face-under").src=oliver;
-                document.body.style.backgroundColor = '#de8740';
+                document.body.style.backgroundColor = '#FE5D26';
                 document.body.style.color = '#fff';
                 document.getElementById("tomas-tag").style.color = '#fff';
                 document.getElementById("tomas-tag").style.backgroundColor = '';
-                document.getElementById("oliver-tag").style.color = '#de8740';
+                document.getElementById("oliver-tag").style.color = '#FE5D26';
                 document.getElementById("oliver-tag").style.backgroundColor = '#fff';
                 oliverOrTomas = true;
                 setTimeout(() => { document.getElementById("face-over").src=""; }, 960);
@@ -45,7 +45,7 @@ function AboutPage(props) {
             <img id="face-under" class="my-auto mx-auto p-2" src={frontBack}></img>
             <img id="face-over" class="my-auto mx-auto p-2" src={frontBack}></img>
           </div>
-          <a href="https://tomascarlson.com/" target="_blank" rel="noopener noreferrer"  className="about-link">
+          <a href="https://tomascarlson.com/" target="_blank" rel="noopener noreferrer" className="about-link">
             <h1 id="tomas-tag" class="my-auto text-center p-2 mx-auto" onMouseEnter={e => {
               if (oliverOrTomas || oliverOrTomas == null) { 
                 document.getElementById("face-over").src=oliverTomas;
