@@ -28,11 +28,11 @@ function AboutPage(props) {
               if (!oliverOrTomas || oliverOrTomas == null) { 
                 document.getElementById("face-over").src=tomasOliver;
                 document.getElementById("face-under").src=oliver;
-                document.body.style.backgroundColor = '#FE5D26';
+                document.body.style.backgroundColor = '#de8740';
                 document.body.style.color = '#fff';
                 document.getElementById("tomas-tag").style.color = '#fff';
                 document.getElementById("tomas-tag").style.backgroundColor = '';
-                document.getElementById("oliver-tag").style.color = '#FE5D26';
+                document.getElementById("oliver-tag").style.color = '#de8740';
                 document.getElementById("oliver-tag").style.backgroundColor = '#fff';
                 oliverOrTomas = true;
                 setTimeout(() => { document.getElementById("face-over").src=""; }, 960);
