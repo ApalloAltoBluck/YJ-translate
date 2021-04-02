@@ -1,5 +1,10 @@
 @import url("https://use.typekit.net/ixa6xeg.css");
 
+@media (min-width:801px)  { 
+    body {overflow: hidden ;}
+    
+ }
+
 
 div {
 }
@@ -194,4 +199,6 @@ html, body {
   bottom: 0;
 }
 
-
+.contact_form {
+    color:black;
+}

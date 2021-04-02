@@ -2,8 +2,13 @@ import React from "react"
  
 import {Alert, Col, Row, Container, Modal, Button} from 'react-bootstrap/';
 import { useEffect, useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
+
 
 function Header(props) {
+
+  const [state, handleSubmit] = useForm("mvodogzk");
+
 
   const [show, setShow] = useState(false);
 
@@ -38,19 +43,36 @@ function Header(props) {
         Launch demo modal
       </Button>
 
-      <Modal show={show} onHide={handleClose} animation={false}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+      <Modal className="contact_form" show={show} onHide={handleClose} animation={false}  >
+
+      <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button onClick={handleClose} type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+       
       </Modal>
     </>
     
