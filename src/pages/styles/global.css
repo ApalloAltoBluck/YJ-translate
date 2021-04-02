@@ -1,12 +1,11 @@
 @import url("https://use.typekit.net/ixa6xeg.css");
-
 @media (min-width:801px)  { 
     body {overflow: hidden ;}
     
  }
 
-
 div {
+    overflow:hidden;
 }
 .sidebar {
     height:100vh !important;
@@ -44,16 +43,11 @@ h1 {
     margin:3%;
     margin-left:auto;
     margin-right:auto;
-
     box-shadow: 3px;
 }
 .slatt:hover  {
     animation: clientHover 2s ease-out 0s infinite alternate none;
     color: #fff !important;
-}
-
-.slatt a {
-    text-decoration: none !important;
 }
 
 .face-imgs {
@@ -88,14 +82,12 @@ body {
 }
 
 .client-box {
-    height: 35vh;
-    width: 35vh;
+    height: 30vh;
+    width: 30vh;
     background: #000;
 }
 
 .client-box:hover {
-    height: 35vh;
-    width: 35vh;
     background: #000;
     animation: clientHover 2s ease-out 0s infinite alternate none;
 }
@@ -110,13 +102,11 @@ body {
 }
 
 .client-box>img {
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 70%;
+    max-height: 70%;
     width: auto;
     height: auto;
 }
-
-
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
 
 @color-card-background: #2d3638;

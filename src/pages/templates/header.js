@@ -24,13 +24,13 @@ function Header(props) {
 
       <Container>
         <br></br>
-      <h1 className=" logo"><a href="/" className="logo-redirect">OLTO CONCEPTS</a></h1>
+      <h1><a href="/" className="logo-redirect"><div className="logo slatt">OLTO CONCEPTS</div></a></h1>
       <br></br>
       
-      <h1><a href="/clients" className="text-white"><div className="slatt">CLIENTS</div></a></h1>
-      <h1 className="text-white"><a href="/" className="text-white"><div className="slatt">PORTFOLIO</div></a></h1>
-      <h1 className="text-white"><a href="/about" className="text-white"><div className="slatt">ABOUT</div></a></h1>
-      <h1 className="text-white"><div className="slatt">CONTACT</div></h1>
+      <h1><a href="/clients" className="text-white text-decoration-none"><div className="slatt">CLIENTS</div></a></h1>
+      <h1><a href="/" className="text-white text-decoration-none"><div className="slatt">PORTFOLIO</div></a></h1>
+      <h1><a href="/about" className="text-white text-decoration-none"><div className="slatt">ABOUT</div></a></h1>
+      <h1><div className="slatt text-white">CONTACT</div></h1>
 
       
 
