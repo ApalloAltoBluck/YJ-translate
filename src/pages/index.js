@@ -8,6 +8,7 @@ import {Button, Alert, Col, Row, Modal} from 'react-bootstrap/';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
+
 // styles
 const pageStyles = {
   color: "#232129",

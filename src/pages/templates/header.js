@@ -9,7 +9,11 @@ function header(props) {
   return (
   <>
     <Helmet>
-        <script src={withPrefix('script.js')} type="text/javascript" />
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+        <script src={withPrefix('index.js')} type="text/javascript" />
     </Helmet>
 
 
@@ -24,8 +28,8 @@ function header(props) {
       <h1><a href="/" className="text-decoration-none text-white"><div className="slatt">PORTFOLIO</div></a></h1>
       <h1><a href="/about" className="text-decoration-none text-white"><div className="slatt">ABOUT</div></a></h1>
       <h1><div className="text-white slatt">CONTACT</div></h1>
+      <button id="btnOpenForm">Open Form</button>
 
-      
 
       <div className="fixed-bottom">
       <p className="text-white">© OLTO Concepts, 2021</p>
