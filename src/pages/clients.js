@@ -17,7 +17,6 @@ function ClientsPage(props) {
     <Row className="sidebar">
       <Header></Header>
       <Col dismissible variant="danger">
-
         <Row>
           <Container>
             <Row>

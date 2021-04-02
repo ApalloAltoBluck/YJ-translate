@@ -1,10 +1,10 @@
-import React, { Component } from "react"
+import React, { Component, useEffect, useState } from "react"
 import { Link } from "gatsby"
 
 import Container from 'react-bootstrap/Container';
 import Header from "./templates/header"
 
-import {Button, Alert, Col, Row} from 'react-bootstrap/';
+import {Button, Alert, Col, Row, Modal} from 'react-bootstrap/';
 import 'bootstrap/dist/css/bootstrap.css';
 
 
@@ -133,18 +133,19 @@ const links = [
   },
 ]
 
+
 // markup
 const IndexPage = () => {
   return (<>
    {/* ROW ONE */}
   <Row className="sidebar">
 
-      <Header></Header>
+
+  <Header></Header>
     
   <Col dismissible variant="danger">
     <Alert.Heading>the fungus is among us</Alert.Heading>
   </Col>
-
 </Row>
 </>
   )

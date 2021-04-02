@@ -1,12 +1,16 @@
 import React from "react"
- 
+import Helmet from "react-helmet"
 import {Alert, Col, Row, Container} from 'react-bootstrap/';
+
+import { withPrefix } from "gatsby"
 
 
 function header(props) {
   return (
-    <>
-   {/* ROW ONE */}
+  <>
+    <Helmet>
+        <script src={withPrefix('script.js')} type="text/javascript" />
+    </Helmet>
 
 
     <Col md={3}dismissible variant="danger" className="sidebar-content w-10">
@@ -28,12 +32,38 @@ function header(props) {
       </div>
 
 
-
+    
      
       </Container>
 
     </Col>
-
+    <div class="form-popup-bg">
+    <div class="form-container">
+      <button id="btnCloseForm" class="close-button">X</button>
+    <h1>Contact Us</h1>
+    <p>For more information. Please complete this form.</p>
+    <form action="">
+      <div class="form-group">
+        <label for="">Name</label>
+        <input type="text" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="">Company Name</label>
+        <input class="form-control" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="">E-Mail Address</label>
+        <input class="form-control" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="">Phone Number</label>
+        <input class="form-control" type="text" />
+        </div>
+        <button>Submit</button>
+      </form>
+        </div>
+      </div>
+    
 </>
   )
 }

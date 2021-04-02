@@ -17,8 +17,12 @@ function AboutPage(props) {
   <Col dismissible variant="danger">
   <div className="container">
     <div class="row">
+       <Col className="mx-auto my-auto">
+        <h1 >About us.</h1>
+        <p >Presented in this audiovisual medium is a card representing nineteen U.S. dollars’ worth of virtual currency usable only in the popular video game of the Battle Royale genre created and developed by Epic Games, Fortnite. My inquiry is this: whom among you would find it desirable to acquire such an item as this? I assure you, also, that I intend to depart with the article in question. You must remember to distribute this video elsewhere! Lastly, to those jesters among us who intend to stir strife in these comments for purposes of personal humor and satisfaction, be precarious as to prevent yourself from being banished and forbidden from participating therein.</p>
+        </Col>
       <div class="col-sm text-justify d-flex flex-column" style={{  height: '100vh'}}>
-        <p class="mx-auto my-auto">Presented in this audiovisual medium is a card representing nineteen U.S. dollars’ worth of virtual currency usable only in the popular video game of the Battle Royale genre created and developed by Epic Games, Fortnite. My inquiry is this: whom among you would find it desirable to acquire such an item as this? I assure you, also, that I intend to depart with the article in question. You must remember to distribute this video elsewhere! Lastly, to those jesters among us who intend to stir strife in these comments for purposes of personal humor and satisfaction, be precarious as to prevent yourself from being banished and forbidden from participating therein.</p>
+       
         <br></br>
       </div>
       <div class="col-sm text-justify d-flex flex-column" style={{  height: '100vh'}}>
