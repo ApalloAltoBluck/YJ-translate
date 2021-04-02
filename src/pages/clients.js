@@ -1,12 +1,12 @@
 import React from "react"
 import { Row, Col, Alert, Image, Container } from 'react-bootstrap/'
 import Header from "./templates/header"
-import who from "../images/WHO.png"
-import varfaj from "../images/varfaj.png"
-import he from "../images/HE_917.png"
-import rough from "../images/rough_simmons.png"
-import wrbb from "../images/WRBB.png"
-import maker from "../images/make.jpg"
+import who from "../images/clients/who.png"
+import varfaj from "../images/clients/varfaj.png"
+import he from "../images/clients/happyendings.png"
+import rough from "../images/clients/roughsimmons.png"
+import wrbb from "../images/clients/wrbb.png"
+import maker from "../images/clients/makegroup.png"
 
 import Logoicon from "../components/logo-icon"
 

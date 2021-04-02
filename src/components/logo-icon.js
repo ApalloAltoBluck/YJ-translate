@@ -9,7 +9,7 @@ function logoicon(props) {
     <>
    {/* ROW ONE */}
     <Col>
-   <div className="h-25 bg-dark"><Image src = {props.link} fluid></Image></div>
+   <div className="client-box d-flex align-content-center"><Image src = {props.link} fluid></Image></div>
    </Col>
    
    </>

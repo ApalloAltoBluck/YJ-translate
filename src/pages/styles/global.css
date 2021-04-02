@@ -69,9 +69,17 @@ body {
     margin-top:1%;
     margin-right:1%;
     margin-bottom:1%;
+    background: #000;
 }
 
 .about-link {
     text-decoration: none !important;
     color: #000;
+}
+
+.client-box>img {
+    max-width: 75%;
+    max-height: 75%;
+    width: auto;
+    height: auto;
 }
