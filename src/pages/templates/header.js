@@ -1,9 +1,15 @@
 import React from "react"
  
-import {Alert, Col, Row, Container} from 'react-bootstrap/';
+import {Alert, Col, Row, Container, Modal, Button} from 'react-bootstrap/';
+import { useEffect, useState } from "react";
 
+function Header(props) {
 
-function header(props) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
    {/* ROW ONE */}
@@ -27,7 +33,26 @@ function header(props) {
       <p className="text-white">© OLTO Concepts, 2021</p>
       </div>
 
+<>
+      <Button variant="primary" onClick={handleShow}>
+        Launch demo modal
+      </Button>
 
+      <Modal show={show} onHide={handleClose} animation={false}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
     
      
       </Container>
@@ -37,4 +62,4 @@ function header(props) {
 </>
   )
 }
-export default header
+export default Header
