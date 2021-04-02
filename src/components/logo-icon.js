@@ -8,10 +8,7 @@ function logoicon(props) {
   return (
     <>
    {/* ROW ONE */}
-    <Col>
-   <div className="client-box d-flex align-content-center"><Image src = {props.link} fluid></Image></div>
-   </Col>
-   
+   <div className="client-box d-flex align-items-center justify-content-center m-2"><Image src = {props.link} fluid></Image></div>   
    </>
   )
 }

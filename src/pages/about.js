@@ -32,11 +32,11 @@ function AboutPage(props) {
               if (!oliverOrTomas || oliverOrTomas == null) { 
                 document.getElementById("face-over").src=tomasOliver;
                 document.getElementById("face-under").src=oliver;
-                document.body.style.backgroundColor = '#FE5D26';
+                document.body.style.backgroundColor = '#D5671A';
                 document.body.style.color = '#fff';
                 document.getElementById("tomas-tag").style.color = '#fff';
                 document.getElementById("tomas-tag").style.backgroundColor = '';
-                document.getElementById("oliver-tag").style.color = '#FE5D26';
+                document.getElementById("oliver-tag").style.color = '#D5671A';
                 document.getElementById("oliver-tag").style.backgroundColor = '#fff';
                 oliverOrTomas = true;
                 setTimeout(() => { document.getElementById("face-over").src=""; }, 960);
@@ -54,11 +54,11 @@ function AboutPage(props) {
               if (oliverOrTomas || oliverOrTomas == null) { 
                 document.getElementById("face-over").src=oliverTomas;
                 document.getElementById("face-under").src=tomas;
-                document.body.style.backgroundColor = '#DE4040';
+                document.body.style.backgroundColor = '#8B2928';
                 document.body.style.color = '#fff';
                 document.getElementById("oliver-tag").style.color = '#fff';
                 document.getElementById("oliver-tag").style.backgroundColor = '';
-                document.getElementById("tomas-tag").style.color = '#DE4040';
+                document.getElementById("tomas-tag").style.color = '#8B2928';
                 document.getElementById("tomas-tag").style.backgroundColor = '#fff';
                 oliverOrTomas = false;
                 setTimeout(() => { document.getElementById("face-over").src=""; }, 960);

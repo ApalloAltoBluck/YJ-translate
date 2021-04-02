@@ -42,8 +42,14 @@ h1 {
 
     box-shadow: 3px;
 }
-.slatt:hover  {background-color:white !important;
-color:black;}
+.slatt:hover  {
+    animation: clientHover 2s ease-out 0s infinite alternate none;
+    color: #fff !important;
+}
+
+.slatt a {
+    text-decoration: none !important;
+}
 
 .face-imgs {
     height: 60vh !important; 
@@ -74,6 +80,28 @@ body {
 .about-link {
     text-decoration: none !important;
     color: #000;
+}
+
+.client-box {
+    height: 35vh;
+    width: 35vh;
+    background: #000;
+}
+
+.client-box:hover {
+    height: 35vh;
+    width: 35vh;
+    background: #000;
+    animation: clientHover 2s ease-out 0s infinite alternate none;
+}
+
+@keyframes clientHover {
+    0.0%{
+        background: #8B2928;
+    }
+    100%{
+        background: #D5671A;
+    }
 }
 
 .client-box>img {

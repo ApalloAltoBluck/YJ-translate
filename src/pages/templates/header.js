@@ -17,13 +17,13 @@ function header(props) {
 
       <Container>
         <br></br>
-      <h1 className=" logo"><a href="/" className="logo-redirect">OLTO CONCEPTS</a></h1>
+      <h1><a href="/" className="text-decoration-none logo-redirect"><div className="slatt logo">OLTO CONCEPTS</div></a></h1>
       <br></br>
       
-      <h1><a href="/clients" className="text-white"><div className="slatt">CLIENTS</div></a></h1>
-      <h1 className="text-white"><a href="/" className="text-white"><div className="slatt">PORTFOLIO</div></a></h1>
-      <h1 className="text-white"><a href="/about" className="text-white"><div className="slatt">ABOUT</div></a></h1>
-      <h1 className="text-white"><div className="slatt">CONTACT</div></h1>
+      <h1><a href="/clients" className="text-decoration-none text-white"><div className="slatt">CLIENTS</div></a></h1>
+      <h1><a href="/" className="text-decoration-none text-white"><div className="slatt">PORTFOLIO</div></a></h1>
+      <h1><a href="/about" className="text-decoration-none text-white"><div className="slatt">ABOUT</div></a></h1>
+      <h1><div className="text-white slatt">CONTACT</div></h1>
 
       
 
