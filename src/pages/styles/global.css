@@ -30,8 +30,8 @@ h1 {
 }
 
 body {
-    background-color: #DDDBDB !important;
-    background: #DDDBDB url("../../images/pattern.png") repeat;
+    background-color: #F2F2F2 !important;
+    background: #F2F2F2 url("../../images/pattern.png") repeat;
     transition: 1s;
 }
 
