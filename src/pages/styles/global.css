@@ -29,9 +29,9 @@ h1 {
     font-style: normal;
 }
 
-
-.col {
-    background-color: #F2F2F2;
+body {
+    background-color: #DDDBDB !important;
+    background: #DDDBDB url("../../images/pattern.png") repeat;
     transition: 1s;
 }
 
@@ -65,12 +65,14 @@ h1 {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+
 }
 
 .face-imgs img {
     position: absolute;
     width: 100%;
 }
+
 
 
 
@@ -90,6 +92,10 @@ h1 {
 .client-box {
     height: 30vh;
     width: 30vh;
+    background: #020202;
+}
+
+.content-box {
     background: #020202;
 }
 
