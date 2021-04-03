@@ -14,10 +14,10 @@ function AboutPage(props) {
 
   <Header></Header>
   
-  <Col dismissible variant="danger">
+  <Col id="bg-switch" dismissible variant="danger">
   <div className="container">
     <div class="row">
-       <Col className="mx-auto my-auto">
+       <Col id="text-switch" className="mx-auto my-auto bg-transparent">
         <h1 >About us.</h1>
         <p >Presented in this audiovisual medium is a card representing nineteen U.S. dollars’ worth of virtual currency usable only in the popular video game of the Battle Royale genre created and developed by Epic Games, Fortnite. My inquiry is this: whom among you would find it desirable to acquire such an item as this? I assure you, also, that I intend to depart with the article in question. You must remember to distribute this video elsewhere! Lastly, to those jesters among us who intend to stir strife in these comments for purposes of personal humor and satisfaction, be precarious as to prevent yourself from being banished and forbidden from participating therein.</p>
         </Col>
@@ -28,12 +28,12 @@ function AboutPage(props) {
               if (!oliverOrTomas || oliverOrTomas == null) { 
                 document.getElementById("face-over").src=tomasOliver;
                 document.getElementById("face-under").src=oliver;
-                document.body.style.backgroundColor = '#D5671A';
-                document.body.style.color = '#fff';
+                document.getElementById("bg-switch").style.backgroundColor = '#CE8147';
+                document.getElementById("text-switch").style.color = '#fff';
                 document.getElementById("tomas-tag").style.color = '#fff';
                 document.getElementById("tomas-tag").style.backgroundColor = '';
-                document.getElementById("oliver-tag").style.color = '#D5671A';
-                document.getElementById("oliver-tag").style.backgroundColor = '#fff';
+                document.getElementById("oliver-tag").style.color = '#CE8147';
+                document.getElementById("oliver-tag").style.backgroundColor = '#F2F2F2';
                 oliverOrTomas = true;
                 setTimeout(() => { document.getElementById("face-over").src=""; }, 960);
               }
@@ -50,12 +50,12 @@ function AboutPage(props) {
               if (oliverOrTomas || oliverOrTomas == null) { 
                 document.getElementById("face-over").src=oliverTomas;
                 document.getElementById("face-under").src=tomas;
-                document.body.style.backgroundColor = '#8B2928';
-                document.body.style.color = '#fff';
+                document.getElementById("bg-switch").style.backgroundColor = '#88292F';
+                document.getElementById("text-switch").style.color = '#fff';
                 document.getElementById("oliver-tag").style.color = '#fff';
                 document.getElementById("oliver-tag").style.backgroundColor = '';
-                document.getElementById("tomas-tag").style.color = '#8B2928';
-                document.getElementById("tomas-tag").style.backgroundColor = '#fff';
+                document.getElementById("tomas-tag").style.color = '#88292F';
+                document.getElementById("tomas-tag").style.backgroundColor = '#F2F2F2';
                 oliverOrTomas = false;
                 setTimeout(() => { document.getElementById("face-over").src=""; }, 960);
               }

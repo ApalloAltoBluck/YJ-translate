@@ -1,4 +1,12 @@
-@import url("https://use.typekit.net/ixa6xeg.css");
+@font-face {
+    font-family: 'Manrope';
+    src:    url('../../fonts/Manrope-SemiBold.woff') format('woff'),
+            url('../../fonts/Manrope-SemiBold.woff2') format('woff2'),
+            url('../../fonts/Manrope-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @media (min-width:801px)  { 
     body {overflow: hidden ;}
     
@@ -17,17 +25,18 @@ div {
 }
 
 h1 {
-    font-family: niveau-grotesk, sans-serif;
-    font-weight: 700;
+    font-family: Manrope, sans-serif;
     font-style: normal;
 }
 
-.Col {
-    background-color:white;
+
+.col {
+    background-color: #F2F2F2;
+    transition: 1s;
 }
 
 .sidebar-content {
-    background-color:black;
+    background-color:#020202;
     padding-left:2% !important;
 }
 
@@ -38,7 +47,7 @@ h1 {
 
 
 .logo {
-    background-color:white;
+    background-color: #F2F2F2;
     color:black !important;
     margin:3%;
     margin-left:auto;
@@ -64,9 +73,6 @@ h1 {
 }
 
 
-body {
-    transition: 1s;
-}
 
 .icon-logo {
     margin-left:1%;
@@ -84,20 +90,19 @@ body {
 .client-box {
     height: 30vh;
     width: 30vh;
-    background: #000;
+    background: #020202;
 }
 
 .client-box:hover {
-    background: #000;
     animation: clientHover 2s ease-out 0s infinite alternate none;
 }
 
 @keyframes clientHover {
     0.0%{
-        background: #8B2928;
+        background: #88292F;
     }
     100%{
-        background: #D5671A;
+        background: #CE8147;
     }
 }
 
@@ -116,9 +121,6 @@ body {
 @default-border-radius: 10px;
 @breakpoint-medium: "screen and (min-width: 700px)";
 
-html, body {
-  background-color: #fff;
-}
 
 .form-popup-bg {
   position:absolute;
