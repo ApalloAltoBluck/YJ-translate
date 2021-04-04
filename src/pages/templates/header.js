@@ -30,7 +30,7 @@ function Header(props) {
       <h1><a href="/clients" className="text-white text-decoration-none"><div className="slatt">CLIENTS</div></a></h1>
       <h1><a href="/" className="text-white text-decoration-none"><div className="slatt">PORTFOLIO</div></a></h1>
       <h1><a href="/about" className="text-white text-decoration-none"><div className="slatt">ABOUT</div></a></h1>
-      <h1><a href="/" className="text-white text-decoration-none"><div className="slatt" onClick={handleShow}>CONTACT</div></a></h1>
+      <h1><a className="text-white text-decoration-none"><div className="slatt" onClick={handleShow}>CONTACT</div></a></h1>
 
       
 

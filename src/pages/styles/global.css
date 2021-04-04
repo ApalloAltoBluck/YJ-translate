@@ -7,10 +7,12 @@
     font-style: normal;
 }
 
-@media (min-width:801px)  { 
+@media (min-width:768px)  { 
     body {overflow: hidden ;}
-    
- }
+    .slatt {
+        font-size: 3vw;
+    }
+}
 
 div {
     overflow:hidden;
@@ -57,7 +59,10 @@ body {
 .slatt:hover  {
     animation: clientHover 2s ease-out 0s infinite alternate none;
     color: #fff !important;
+    cursor:pointer;
 }
+
+
 
 .face-imgs {
     height: 60vh !important; 
@@ -72,9 +77,6 @@ body {
     position: absolute;
     width: 100%;
 }
-
-
-
 
 .icon-logo {
     margin-left:1%;
