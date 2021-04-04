@@ -202,3 +202,9 @@ body {
 .contact_form {
     color:black;
 }
+
+.formModal {
+    background-color:black;
+    border-color:white;
+    border-style: dotted;
+}

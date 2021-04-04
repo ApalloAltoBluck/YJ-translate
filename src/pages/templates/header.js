@@ -40,13 +40,14 @@ function Header(props) {
 
 <>
 
+<Container>
 
       <Modal className="contact_form" show={show} onHide={handleClose} animation={false}  >
-
-      <form onSubmit={handleSubmit}>
-      <label htmlFor="email">
+        <Container className="formModal">
+      <form onSubmit={handleSubmit} >
+      <label className="text-white" htmlFor="email">
         Email Address
-      </label>
+      </label><br></br>
       <input
         id="email"
         type="email" 
@@ -56,7 +57,7 @@ function Header(props) {
         prefix="Email" 
         field="email"
         errors={state.errors}
-      />
+      /><br></br>
       <textarea
         id="message"
         name="message"
@@ -65,13 +66,15 @@ function Header(props) {
         prefix="Message" 
         field="message"
         errors={state.errors}
-      />
-      <button onClick={handleClose} type="submit" disabled={state.submitting}>
+      /><br></br><br></br>
+      <Button className="btn btn-light" onClick={handleClose} type="submit" disabled={state.submitting}>
         Submit
-      </button>
+      </Button>
     </form>
-       
+    </Container>
       </Modal>
+      </Container>
+
     </>
     
      
