@@ -3,10 +3,15 @@ import { Link } from "gatsby"
 
 import Container from 'react-bootstrap/Container';
 import Header from "./templates/header"
+import { Fade } from "react-slideshow-image";
 
-import {Button, Alert, Col, Row, Modal} from 'react-bootstrap/';
+
+import { Button, Alert, Col, Row, Modal } from 'react-bootstrap/';
 import 'bootstrap/dist/css/bootstrap.css';
 
+import ex1 from "../images/screenshots/1.png"
+import ex2 from "../images/screenshots/2.png"
+import ex3 from "../images/screenshots/3.jpg"
 
 
 // styles
@@ -138,17 +143,28 @@ const links = [
 // markup
 const IndexPage = () => {
   return (<>
-   {/* ROW ONE */}
-  <Row className="sidebar">
+    {/* ROW ONE */}
+    <Row className="sidebar">
 
 
-  <Header></Header>
-    
-  <Col dismissible variant="danger">
-    <Alert.Heading>the fungus is among us</Alert.Heading>
-  </Col>
-</Row>
-</>
+      <Header></Header>
+      <Col dismissible variant="danger">
+        <div className="container d-flex flex-column h-100">
+          <Fade autoplay="true" className="mx-auto my-auto portfolio-slider">
+            <div className="portfolio-slider">
+              <img src={ex1}></img>
+            </div>
+            <div className="portfolio-slider">
+              <img src={ex2}></img>
+            </div>
+            <div className="portfolio-slider">
+              <img src={ex3}></img>
+            </div>
+          </Fade>
+        </div>
+      </Col>
+    </Row>
+  </>
   )
 }
 

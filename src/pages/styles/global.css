@@ -14,6 +14,8 @@
     }
 }
 
+@import "react-slideshow-image/dist/styles.css";
+
 div {
     overflow:hidden;
 }
@@ -229,6 +231,22 @@ body {
 .stickyFooter{
     padding-top:5%;
     padding-bottom:1%;
+    background-color: #020202;
+}
 
-    background-color: black;
+.portfolio-slider {
+    width: 60vw !important;
+    height: auto;
+    
+}
+
+.portfolio-slider>img {
+    width: 100% !important;
+    border: solid 5px #020202;
+}
+
+.default-nav {
+    position:relative;
+    background: none !important;
+    left: .25vw !important;
 }
