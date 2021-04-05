@@ -12,6 +12,9 @@
     .logo, .slatt  {
         font-size: 3vw;
     }
+}
+
+@media (min-width:1520px)  { 
     p {
         font-size: 1vw;
     }
