@@ -14,8 +14,6 @@
     }
 }
 
-@import "react-slideshow-image/dist/styles.css";
-
 div {
     overflow:hidden;
 }
@@ -234,19 +232,8 @@ body {
     background-color: #020202;
 }
 
-.portfolio-slider {
+.carousel {
     width: 60vw !important;
-    height: auto i !important;
+    height: auto !important;
     
-}
-
-.portfolio-slider>img {
-    width: 100% !important;
-    border: solid 5px #020202;
-}
-
-.default-nav {
-    position:relative;
-    background: none !important;
-    left: .25vw !important;
 }

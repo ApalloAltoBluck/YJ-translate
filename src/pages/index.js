@@ -1,10 +1,8 @@
-import React, { Component, useEffect, useState } from "react"
+import React, { Carousel, Component, useEffect, useState } from "react"
 import { Link } from "gatsby"
 
 import Container from 'react-bootstrap/Container';
 import Header from "./templates/header"
-import { Fade } from "react-slideshow-image";
-
 
 import { Button, Alert, Col, Row, Modal } from 'react-bootstrap/';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -150,17 +148,27 @@ const IndexPage = () => {
       <Header></Header>
       <Col dismissible variant="danger">
         <div className="d-flex flex-column h-100">
-          <Fade autoplay="true" className="mx-auto my-auto portfolio-slider">
-            <div className="portfolio-slider">
-              <img src={ex1}></img>
+          <div id="carouselExampleControls" className="carousel slide my-auto mx-auto" data-ride="carousel">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img className="d-block w-100" src={ex1} alt="First slide"></img>
+              </div>
+              <div className="carousel-item">
+                <img className="d-block w-100" src={ex2} alt="Second slide"></img>
+              </div>
+              <div className="carousel-item">
+                <img className="d-block w-100" src={ex3} alt="Third slide"></img>
+              </div>
             </div>
-            <div className="portfolio-slider">
-              <img src={ex2}></img>
-            </div>
-            <div className="portfolio-slider">
-              <img src={ex3}></img>
-            </div>
-          </Fade>
+            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="sr-only">Previous</span>
+            </a>
+            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="sr-only">Next</span>
+            </a>
+          </div>
         </div>
       </Col>
     </Row>
