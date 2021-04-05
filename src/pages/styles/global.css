@@ -9,8 +9,11 @@
 
 @media (min-width:768px)  { 
     body {overflow: hidden ;}
-    .slatt {
+    .logo, .slatt  {
         font-size: 3vw;
+    }
+    p {
+        font-size: 1.5em;
     }
 }
 
@@ -119,6 +122,7 @@ body {
         background: #CE8147;
     }
 }
+
 
 .client-box>img {
     max-width: 70%;
@@ -235,5 +239,14 @@ body {
 .carousel {
     width: 60vw !important;
     height: auto !important;
-    border: solid 5px #020202;
+    border: solid 10px #020202;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    animation: clientHover 2s ease-out 0s infinite alternate none;
+    text-decoration: none !important;
 }

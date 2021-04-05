@@ -10,7 +10,7 @@ function AboutPage(props) {
     <Header></Header>
 
     <Col dismissible variant="danger">
-      <div className="container">
+      <div>
         <div class="about-grey text-justify d-flex flex-column" style={{ height: '100vh' }}>
           <div class="my-auto">
             <div class="face-imgs">
@@ -18,7 +18,7 @@ function AboutPage(props) {
             </div>
             <div className="p-4 about-box text-white mx-auto my-auto content-box">
               <h1 className="logo">OLTO CONCEPTS</h1>
-              <p>is a creative partnership between <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://blucksy.com/"><u>Oliver Buckley</u></a> and <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://tomascarlson.com/"><u>Tomás Carlson</u></a>, working with brands and artists alike to provide creative tech solutions for every clients specific needs and aesthetics.</p>
+              <p>is a creative partnership between <a className="link text-white" target="_blank" rel="noopener noreferrer" href="https://blucksy.com/">Oliver Buckley</a> and <a className="link text-white" target="_blank" rel="noopener noreferrer" href="https://tomascarlson.com/">Tomás Carlson</a>, working with brands and artists alike to provide creative tech solutions for every clients specific needs and aesthetics.</p>
             </div>
           </div>
         </div>
