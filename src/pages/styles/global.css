@@ -235,5 +235,5 @@ body {
 .carousel {
     width: 60vw !important;
     height: auto !important;
-    
+    border: solid 5px #020202;
 }
