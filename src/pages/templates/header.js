@@ -1,6 +1,6 @@
 import React from "react"
- 
-import {Alert, Col, Row, Container, Modal, Button} from 'react-bootstrap/';
+
+import { Alert, Col, Row, Container, Modal, Button } from 'react-bootstrap/';
 import { useEffect, useState } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 
@@ -17,72 +17,70 @@ function Header(props) {
 
   return (
     <>
-   {/* ROW ONE */}
+      {/* ROW ONE */}
 
 
-    <Col md={3}dismissible variant="danger" className="sidebar-content w-10">
+      <Col md={3} dismissible variant="danger" className="sidebar-content w-10">
 
-      <Container>
-        <br></br>
-      <h1><a href="/" className="logo-redirect"><div className="logo slatt">OLTO CONCEPTS</div></a></h1>
-      <br></br>
-      
-      <h1><a href="/clients" className="text-white text-decoration-none"><div className="slatt">CLIENTS</div></a></h1>
-      <h1><a href="/" className="text-white text-decoration-none"><div className="slatt">PORTFOLIO</div></a></h1>
-      <h1><a href="/about" className="text-white text-decoration-none"><div className="slatt">ABOUT</div></a></h1>
-      <h1><a className="text-white text-decoration-none"><div className="slatt" onClick={handleShow}>CONTACT</div></a></h1>
+        <Container>
+          <br></br>
+          <h1><a href="/" className="logo-redirect"><div className="logo">OLTO CONCEPTS</div></a></h1>
+          <br></br>
 
-      
+          <h1><a href="/clients" className="text-white text-decoration-none"><div className="slatt">CLIENTS</div></a></h1>
+          <h1><a href="/" className="text-white text-decoration-none"><div className="slatt">PORTFOLIO</div></a></h1>
+          <h1><a href="/about" className="text-white text-decoration-none"><div className="slatt">ABOUT</div></a></h1>
+          <h1><a className="text-white text-decoration-none"><div className="slatt" onClick={handleShow}>CONTACT</div></a></h1>
 
-      <div className="fixed-bottom">
-      <p className="text-white">© OLTO Concepts, 2021</p>
-      </div>
 
-<>
 
-<Container>
+          <div className="fixed-bottom">
+            <p className="text-white">© OLTO CONCEPTS, 2021</p>
+          </div>
 
-      <Modal className="contact_form" show={show} onHide={handleClose} animation={false}  >
-        <Container className="formModal">
-      <form onSubmit={handleSubmit} >
-      <label className="text-white" htmlFor="email">
-        Email Address
-      </label><br></br>
-      <input
-        id="email"
-        type="email" 
-        name="email"
-      />
-      <ValidationError 
-        prefix="Email" 
-        field="email"
-        errors={state.errors}
-      /><br></br>
-      <textarea
-        id="message"
-        name="message"
-      />
-      <ValidationError 
-        prefix="Message" 
-        field="message"
-        errors={state.errors}
-      /><br></br><br></br>
-      <Button className="btn btn-light" onClick={handleClose} type="submit" disabled={state.submitting}>
-        Submit
-      </Button>
-    </form>
-    </Container>
-      </Modal>
-      </Container>
+          <>
+
+            <Container>
+
+              <Modal className="contact_form" show={show} onHide={handleClose} animation={false}  >
+                <Container className="formModal">
+                  <form onSubmit={handleSubmit} >
+                    <h1 className="text-white py-2">CONTACT US</h1>
+                    <input
+                      id="email"
+                      type="email"
+                      name="email"
+                    />
+                    <ValidationError
+                      prefix="Email"
+                      field="email"
+                      errors={state.errors}
+                    /><br></br>
+                    <textarea
+                      id="message"
+                      name="message"
+                    />
+                    <ValidationError
+                      prefix="Message"
+                      field="message"
+                      errors={state.errors}
+                    /><br></br>
+                    <h1><div onClick={handleClose} type="submit" disabled={state.submitting} className="logo-redirect logo slatt">
+                      SUBMIT</div></h1>
+                  </form>
+                  
+                </Container>
+              </Modal>
+            </Container>
+
+          </>
+
+
+        </Container>
+
+      </Col>
 
     </>
-    
-     
-      </Container>
-
-    </Col>
-
-</>
   )
 }
 export default Header

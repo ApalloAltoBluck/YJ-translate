@@ -17,9 +17,9 @@ function AboutPage(props) {
   <Col dismissible variant="danger">
   <div className="container">
     <div class="row">
-       <Col id="text-switch" className="p-4 text-white mx-auto my-auto content-box">
-        <h1 >About us.</h1>
-        <p >Presented in this audiovisual medium is a card representing nineteen U.S. dollars’ worth of virtual currency usable only in the popular video game of the Battle Royale genre created and developed by Epic Games, Fortnite. My inquiry is this: whom among you would find it desirable to acquire such an item as this? I assure you, also, that I intend to depart with the article in question. You must remember to distribute this video elsewhere! Lastly, to those jesters among us who intend to stir strife in these comments for purposes of personal humor and satisfaction, be precarious as to prevent yourself from being banished and forbidden from participating therein.</p>
+       <Col className="p-4 text-white mx-auto my-auto content-box">
+       <h1 className="logo">OLTO CONCEPTS</h1>
+        <p>is a creative partnership between Oliver Buckley and Tomás Carlson, working with brands and artists alike to provide creative tech solutions for every clients specific needs and aesthetics.</p>
         </Col>
       <div class="col-sm text-justify d-flex flex-column" style={{  height: '100vh'}}>
         <div class="my-auto">
