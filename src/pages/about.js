@@ -11,7 +11,7 @@ function AboutPage(props) {
 
     <Col dismissible variant="danger">
       <div className="container">
-        <div class="text-justify d-flex flex-column" style={{ height: '100vh' }}>
+        <div class="about-grey text-justify d-flex flex-column" style={{ height: '100vh' }}>
           <div class="my-auto">
             <div class="face-imgs">
               <img class="mx-auto p-2" src={frontBack}></img>
