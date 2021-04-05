@@ -66,27 +66,23 @@ body {
 
 
 .face-imgs {
-    height: 30vw !important; 
-    width: 30vw !important; 
-    position: relative;
+    height: 40vw !important; 
+    width: 40vw !important; 
+    position: absolute;
     left: 50%;
+    top: 50%;
+    margin-top: -20vw;
     transform: translateX(-50%);
     background-color: #020202;
+    z-index: -1;
 }
 
 .face-imgs img {
     position: absolute;
     width: 100%;
     border: solid 2px #020202;
-    filter: grayscale(1) brightness(1.5);
-    
-    transition: 1s;
-
 }
 
-.face-imgs img:hover {
-    filter: grayscale(0) brightness(1);
-}
 
 .icon-logo {
     margin-left:1%;
@@ -215,4 +211,8 @@ body {
 .modal-content {
     background-color: #020202 !important;
     border-radius: 0px !important;
+}
+
+.about-box {
+    max-width: 55vw;
 }
