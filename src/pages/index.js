@@ -149,7 +149,7 @@ const IndexPage = () => {
 
       <Header></Header>
       <Col dismissible variant="danger">
-        <div className="container d-flex flex-column h-100">
+        <div className="d-flex flex-column h-100">
           <Fade autoplay="true" className="mx-auto my-auto portfolio-slider">
             <div className="portfolio-slider">
               <img src={ex1}></img>
