@@ -255,9 +255,9 @@ body {
 }
 
 ::selection {
-    animation: clientHover 2s ease-out 0s infinite alternate none;
+    background: #CE8147;
 }
 
 ::-moz-selection {
-    animation: clientHover 2s ease-out 0s infinite alternate none;
+    background: #CE8147;
 }
