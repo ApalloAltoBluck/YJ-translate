@@ -66,17 +66,26 @@ body {
 
 
 .face-imgs {
-    height: 60vh !important; 
-    width: 60vh !important; 
+    height: 30vw !important; 
+    width: 30vw !important; 
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-
+    background-color: #020202;
 }
 
 .face-imgs img {
     position: absolute;
     width: 100%;
+    border: solid 2px #020202;
+    filter: grayscale(1) brightness(1.5);
+    
+    transition: 1s;
+
+}
+
+.face-imgs img:hover {
+    filter: grayscale(0) brightness(1);
 }
 
 .icon-logo {

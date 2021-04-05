@@ -24,7 +24,7 @@ function Header(props) {
 
         <Container>
           <br></br>
-          <h1><a href="/" className="logo-redirect"><div className="logo">OLTO CONCEPTS</div></a></h1>
+          <h1><a href="/" className="logo-redirect"><div className="logo slatt">OLTO CONCEPTS</div></a></h1>
           <br></br>
 
           <h1><a href="/clients" className="text-white text-decoration-none"><div className="slatt">CLIENTS</div></a></h1>
