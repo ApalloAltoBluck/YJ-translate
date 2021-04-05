@@ -253,3 +253,11 @@ body {
     animation: clientHover 2s ease-out 0s infinite alternate none;
     text-decoration: none !important;
 }
+
+::selection {
+    animation: clientHover 2s ease-out 0s infinite alternate none;
+}
+
+::-moz-selection {
+    animation: clientHover 2s ease-out 0s infinite alternate none;
+}
