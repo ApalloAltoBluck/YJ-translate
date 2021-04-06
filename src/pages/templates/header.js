@@ -95,7 +95,8 @@ function Header(props) {
                     </Row>
                     <br></br>
 
-                    <div onClick={handleClose} type="submit" disabled={state.submitting} className="logo-redirect logo slatt"><h1>
+                    <div onClick={handleClose} type="submit" disabled={state.submitting} className="logo-redirect logo slatt">
+                      <h1 className="submit-button">
                       SUBMIT</h1></div>
                       
 
