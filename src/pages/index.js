@@ -146,29 +146,29 @@ const IndexPage = () => {
     <Row className="sidebar">
       <Header></Header>
       <Col sm={9} dismissible variant="danger" className="tohide">
-        <div className="d-flex flex-column h-100">
-          <Carousel fade className="mx-auto my-auto carousel">
-            <Carousel.Item>s
-              <img className="d-block w-100"
-                src={ex1}
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={ex2}
-                alt="Second slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={ex3}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-          </Carousel>
+        <div className="d-flex flex-column my-auto">
+            <Carousel fade className="carousel mx-auto">
+              <Carousel.Item>
+                <img className="d-block w-100 car-border"
+                  src={ex1}
+                  alt="First slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 car-border"
+                  src={ex2}
+                  alt="Second slide"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 car-border"
+                  src={ex3}
+                  alt="Third slide"
+                />
+              </Carousel.Item>
+            </Carousel>
         </div>
       </Col>
     </Row>
