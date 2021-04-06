@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/olto-dev",
   siteMetadata: {
     title: "OLTO-dev",
   },
@@ -12,6 +13,7 @@ module.exports = {
       options: {
         name: "images",
         path: "./src/images/",
+        
       },
       __key: "images",
     },

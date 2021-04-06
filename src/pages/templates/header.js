@@ -24,12 +24,12 @@ function Header(props) {
 
         <Container>
           <br></br>
-          <h1><a href="/" className="logo-redirect"><div className="logo slatt">OLTO CONCEPTS</div></a></h1>
+          <h1><a href="/olto-dev/" className="logo-redirect"><div className="logo slatt">OLTO CONCEPTS</div></a></h1>
           <br></br>
 
-          <h1><a href="/clients" className="text-white text-decoration-none"><div className="slatt">CLIENTS</div></a></h1>
-          <h1><a href="/portfolio" className="text-white text-decoration-none"><div className="slatt">PORTFOLIO</div></a></h1>
-          <h1><a href="/about" className="text-white text-decoration-none"><div className="slatt">ABOUT</div></a></h1>
+          <h1><a href="/olto-dev/clients" className="text-white text-decoration-none"><div className="slatt">CLIENTS</div></a></h1>
+          <h1><a href="/olto-dev/portfolio" className="text-white text-decoration-none"><div className="slatt">PORTFOLIO</div></a></h1>
+          <h1><a href="/olto-dev/about" className="text-white text-decoration-none"><div className="slatt">ABOUT</div></a></h1>
           <h1><a className="text-white text-decoration-none"><div className="slatt" onClick={handleShow}>CONTACT</div></a></h1>
 
 
