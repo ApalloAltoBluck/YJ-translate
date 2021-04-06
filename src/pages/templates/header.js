@@ -45,30 +45,62 @@ function Header(props) {
               <Modal className="contact_form" show={show} onHide={handleClose} animation={false}  >
                 <Container className="formModal">
                   <form onSubmit={handleSubmit} >
+                    
                     <h1 className="text-white py-2">CONTACT US</h1>
-                    <input
+                    
+                    <Container>
+                    <Row className="">
+                    <h3 class="text-white">Email: </h3><input
                       id="email"
                       type="email"
                       name="email"
+                      className="formLabel"
                     />
                     <ValidationError
                       prefix="Email"
                       field="email"
                       errors={state.errors}
-                    /><br></br>
-                    <textarea
+                    />
+                    
+                    </Row>
+
+                    
+                    </Container>
+
+
+                    <Row>
+                    <br></br>
+                    <br></br>
+                    <Container>
+                    
+
+                    <textarea className="h-100 w-100"
                       id="message"
                       name="message"
-                    />
+                      
+                    > 
+                    
+
+
+
+                    </textarea>
                     <ValidationError
                       prefix="Message"
                       field="message"
                       errors={state.errors}
-                    /><br></br>
-                    <h1><div onClick={handleClose} type="submit" disabled={state.submitting} className="logo-redirect logo slatt">
-                      SUBMIT</div></h1>
+                      className="Content-Form"
+                    />
+                    </Container>
+
+                    </Row>
+                    <br></br>
+
+                    <div onClick={handleClose} type="submit" disabled={state.submitting} className="logo-redirect logo slatt"><h1>
+                      SUBMIT</h1></div>
+                      
+
                   </form>
-                  
+
                 </Container>
               </Modal>
             </Container>

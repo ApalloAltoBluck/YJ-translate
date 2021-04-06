@@ -148,7 +148,7 @@ const IndexPage = () => {
       <Col dismissible variant="danger">
         <div className="d-flex flex-column h-100">
           <Carousel fade className="mx-auto my-auto carousel">
-            <Carousel.Item>
+            <Carousel.Item>s
               <img className="d-block w-100"
                 src={ex1}
                 alt="First slide"

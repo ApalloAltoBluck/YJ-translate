@@ -261,3 +261,13 @@ body {
 ::-moz-selection {
     background: #CE8147;
 }
+
+.formLabel {
+    margin-left:5%  !important;
+}
+
+.text-box {
+    color:Black;
+    padding-top:30px !important;
+}
+
