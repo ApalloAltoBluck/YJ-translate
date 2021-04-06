@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 
 
-function Header(props) {
+function SmallHeader(props) {
 
   const [state, handleSubmit] = useForm("mvodogzk");
 
@@ -20,22 +20,23 @@ function Header(props) {
       {/* ROW ONE */}
 
 
-      <Col md={3} dismissible variant="danger" className="sidebar-content w-10">
+      <Col sm={3} dismissible variant="danger" id="sidebar-tag" className="sidebar-content w-10">
 
         <Container>
-          <br></br>
+          <br class="tohide"></br>
           <h1><a href="/" className="logo-redirect"><div className="logo slatt">OLTO CONCEPTS</div></a></h1>
           <br></br>
 
+          <div className="tohide">
           <h1><a href="/clients" className="text-white text-decoration-none"><div className="slatt">CLIENTS</div></a></h1>
           <h1><a href="/portfolio" className="text-white text-decoration-none"><div className="slatt">PORTFOLIO</div></a></h1>
           <h1><a href="/about" className="text-white text-decoration-none"><div className="slatt">ABOUT</div></a></h1>
           <h1><a className="text-white text-decoration-none"><div className="slatt" onClick={handleShow}>CONTACT</div></a></h1>
-
+          </div>
 
 
           <div className="fixed-bottom">
-            <p className="text-white">© OLTO CONCEPTS, 2021</p>
+            <p id="bottom-text" className="text-white">© OLTO CONCEPTS, 2021</p>
           </div>
 
           <>
@@ -45,63 +46,30 @@ function Header(props) {
               <Modal className="contact_form" show={show} onHide={handleClose} animation={false}  >
                 <Container className="formModal">
                   <form onSubmit={handleSubmit} >
-                    
                     <h1 className="text-white py-2">CONTACT US</h1>
-                    
-                    <Container>
-                    <Row className="">
-                    <h3 class="text-white">Email: </h3><input
+                    <input
                       id="email"
                       type="email"
                       name="email"
-                      className="formLabel"
                     />
                     <ValidationError
                       prefix="Email"
                       field="email"
                       errors={state.errors}
-                    />
-                    
-                    </Row>
-
-                    
-                    </Container>
-
-
-                    <Row>
-                    <br></br>
-                    <br></br>
-                    <Container>
-                    
-
-                    <textarea className="h-100 w-100"
+                    /><br></br>
+                    <textarea
                       id="message"
                       name="message"
-                      
-                    > 
-                    
-
-
-
-                    </textarea>
+                    />
                     <ValidationError
                       prefix="Message"
                       field="message"
                       errors={state.errors}
-                      className="Content-Form"
-                    />
-                    </Container>
-
-                    </Row>
-                    <br></br>
-
-                    <div onClick={handleClose} type="submit" disabled={state.submitting} className="logo-redirect logo slatt">
-                      <h1 className="submit-button">
-                      SUBMIT</h1></div>
-                      
-
+                    /><br></br>
+                    <h1><div onClick={handleClose} type="submit" disabled={state.submitting} className="logo-redirect logo slatt">
+                      SUBMIT</div></h1>
                   </form>
-
+                  
                 </Container>
               </Modal>
             </Container>
@@ -116,4 +84,4 @@ function Header(props) {
     </>
   )
 }
-export default Header
+export default SmallHeader

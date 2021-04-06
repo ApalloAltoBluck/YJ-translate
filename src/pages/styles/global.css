@@ -7,10 +7,63 @@
     font-style: normal;
 }
 
-@media (min-width:768px)  { 
+
+
+@media (min-width:575px)  { 
     body {overflow: hidden ;}
     .logo, .slatt  {
         font-size: 3vw;
+    }
+    div {
+        overflow: hidden;
+    }
+    .face-imgs {
+        height: 40vw !important; 
+        width: 40vw !important;
+        top: 50%;
+        margin-top: -20vw; 
+    }
+    .main-content {
+        height: 100vh !important;
+    }
+    .carousel {
+        width: 60vw !important;
+        height: 100vh !important;
+        display: flex;
+        align-items: center;
+    }
+}
+
+body {
+    overflow-x: hidden ;
+}
+
+.face-imgs {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #020202;
+    z-index: -1;
+}
+
+@media (max-width:575px)  { 
+    .tohide {
+        display: none !important;
+     }
+    #sidebar-tag {
+        height:80px !important;
+    }
+    .face-imgs {
+        height: 90vw !important; 
+        width: 90vw !important; 
+        top: 50%;
+        margin-top: -45%;
+    }
+    .main-content {
+        height: 100% !important;
+    }
+    .carousel {
+        width: 90vw !important;
     }
 }
 
@@ -18,11 +71,15 @@
     p {
         font-size: 1vw;
     }
+
+    .face-imgs {
+        height: 40vw !important; 
+        width: 40vw !important; 
+    }
+    
 }
 
-div {
-    overflow:hidden;
-}
+
 .sidebar {
     height:100vh !important;
 }
@@ -48,9 +105,9 @@ body {
     padding-left:2% !important;
 }
 
-.fixed-bottom {
-    padding-left:2% !important;
-
+#bottom-text {
+    background-color: #020202;
+    width: 40%;
 }
 
 
@@ -71,17 +128,7 @@ body {
 
 
 
-.face-imgs {
-    height: 40vw !important; 
-    width: 40vw !important; 
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: -20vw;
-    transform: translateX(-50%);
-    background-color: #020202;
-    z-index: -1;
-}
+
 
 .face-imgs img {
     position: absolute;
@@ -239,9 +286,8 @@ body {
     background-color: #020202;
 }
 
-.carousel {
-    width: 60vw !important;
-    height: auto !important;
+
+.car-border {
     border: solid 10px #020202;
 }
 

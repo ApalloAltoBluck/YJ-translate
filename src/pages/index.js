@@ -145,7 +145,7 @@ const IndexPage = () => {
     {/* ROW ONE */}
     <Row className="sidebar">
       <Header></Header>
-      <Col dismissible variant="danger">
+      <Col sm={9} dismissible variant="danger" className="tohide">
         <div className="d-flex flex-column h-100">
           <Carousel fade className="mx-auto my-auto carousel">
             <Carousel.Item>s

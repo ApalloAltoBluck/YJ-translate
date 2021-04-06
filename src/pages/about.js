@@ -1,17 +1,17 @@
 import React from "react"
 import { Row, Col, Alert, Container } from 'react-bootstrap/'
-import Header from "./templates/header"
+import SmallHeader from "./templates/smallheader"
 import frontBack from "../images/backandforthcolor.gif"
 
 
 function AboutPage(props) {
   return (<Row className="sidebar">
 
-    <Header></Header>
+    <SmallHeader></SmallHeader>
 
-    <Col dismissible variant="danger">
+    <Col sm={9} dismissible variant="danger">
       <div>
-        <div class="about-grey text-justify d-flex flex-column" style={{ height: '100vh' }}>
+        <div class="main-content about-grey text-justify d-flex flex-column" >
           <div class="my-auto">
             <div class="face-imgs">
               <img class="mx-auto p-2" src={frontBack}></img>
