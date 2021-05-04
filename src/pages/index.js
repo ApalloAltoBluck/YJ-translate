@@ -137,8 +137,9 @@ const links = [
 
 // markup
 const IndexPage = () => {
-  return (<>
-  </>
+  return (<div className="mx-auto">
+  <Header />
+  </div>
   )
 }
 
