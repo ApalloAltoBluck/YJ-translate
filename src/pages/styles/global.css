@@ -113,8 +113,7 @@ h1 p {
 }
 
 body {
-    background-color: #F2F2F2 !important;
-    background: #F2F2F2 url("../../images/pattern.png") repeat;
+    background-color: #FFDA33 !important;
     transition: 1s;
 }
 

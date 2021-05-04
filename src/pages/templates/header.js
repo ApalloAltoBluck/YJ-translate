@@ -35,7 +35,6 @@ function Header(props) {
 
 
           <div className="fixed-bottom">
-            <p className="text-white">© OLTO CONCEPTS, 2021</p>
           </div>
 
           <>
